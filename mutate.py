@@ -18,7 +18,7 @@ class MutateException(Exception):
 
 
 def mutate(js_code, value):
-    result_struct = lib.Mutate(js_code.encode('utf-8'), value.encode('utf-8'))
+    result_struct = lib.Mutate(js_code.encode('utf-8'), str(value).encode('utf-8'))
     result = result_struct.result.decode('utf-8') if result_struct.result else ''
     err = result_struct.error.decode('utf-8') if result_struct.error else ''
     if err:

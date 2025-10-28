@@ -1,0 +1,12 @@
+database:
+  host: "monolith-dest-eliza-2.c8srrgyqkcpi.me-central-1.rds.amazonaws.com"
+  user: "dubizzle"
+  password: "xxx"
+  name: "dubizzle"
+
+logging:
+  file: "logs/data_masking.log"
+  level: "INFO"
+
+data:
+  csv_path: "data/masking_config.csv"
